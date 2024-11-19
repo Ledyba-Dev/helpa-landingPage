@@ -54,7 +54,6 @@
                 flex-direction: column;
                 gap: 20px;
                 section {
-                    border-left: 3px dashed black;
                     padding-left: 14px;
                     text-align: center;
                     flex-wrap: wrap;
@@ -121,6 +120,7 @@
                 width: 60%;
                 .helpPercentageContainer {
                     section {
+                        border-left: 3px dashed black;
                         display: flex;
                         align-items: center;
                         gap: 25px;
@@ -129,7 +129,7 @@
                 .buttonActionContainer {
                     justify-content: flex-start;
                     button {
-                        width: 140px;
+                        width: 160px;
                     }
                 }
             }

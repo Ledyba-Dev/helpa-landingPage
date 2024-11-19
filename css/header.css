@@ -4,6 +4,8 @@
     align-items: center;
     flex-wrap: wrap;
     a {
+        display: flex;
+        gap: 20px;
         color: var(--black-color);
         h2 {
             font-size: clamp(1.7rem, 2vw, 4rem);

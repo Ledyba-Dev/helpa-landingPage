@@ -4,22 +4,17 @@ const ulNav = document.getElementById("ulNav");
 
 const openNav = () => {
     ulNav.classList.toggle("hidden");
-}
+};
 
 const toggleNav = () => {
     openIcon.classList.toggle("hidden");
     closeIcon.classList.toggle("hidden");
     openNav();
-}
-
-
-
+};
 
 document.addEventListener("click", (event) => {
-    // toggleNav
-    if (event.target.matches("#btnNav *")) {
+    const targetEvent = event.target;
+    if (targetEvent.matches("#btnNav *") || targetEvent.matches("#btnNav")) {
         toggleNav();
     }
-
-    
 });
