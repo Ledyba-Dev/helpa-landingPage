@@ -1,0 +1,143 @@
+.helpSection {
+    header {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2 {
+            font-weight: 500;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .buttonHelpContainer {
+            margin-top: 55px;
+            display: flex;
+            gap: 30px;
+            button {
+                font-family: "Lora", serif;
+                font-weight: 500;
+                padding: 10px 20px;
+                border-radius: 35px;
+            }
+            button:not([disabled]) {
+                border: 1px solid var(--black-color);
+            }
+            button[disabled] {
+                background-color: transparent;
+                border: none;
+            }
+            button[disabled]:hover {
+                background-color: transparent;
+                border: none;
+                background-color: rgba(175, 175, 175, 0.177);
+            }
+        }
+    }
+    .helpSectionTabContainer {
+        article {
+            margin-top: 50px;
+            h2 {
+                font-weight: 500;
+            }
+            h2 + p {
+                margin-top: 10px;
+            }
+
+            .helpPercentageContainer {
+                text-align: center;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                section {
+                    border-left: 3px dashed black;
+                    padding-left: 14px;
+                    text-align: center;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    h3 {
+                        font-size: clamp(1.6rem, 4vw, 2rem);
+                        font-weight: 500;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            .buttonActionContainer {
+                margin: 0 auto;
+                margin-top: 40px;
+                margin-bottom: 70px;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 30px;
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    img {
+        margin: 0 auto;
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .helpSection {
+        header {
+            .buttonHelpContainer {
+                margin-top: 55px;
+                display: flex;
+                gap: 30px;
+                button {
+                    font-family: "Lora", serif;
+                    font-weight: 500;
+                    padding: 20px 40px;
+                    border-radius: 35px;
+                }
+                button:not([disabled]) {
+                    border: 1px solid var(--black-color);
+                }
+                button[disabled] {
+                    background-color: transparent;
+                    border: none;
+                }
+                button[disabled]:hover {
+                    background-color: transparent;
+                    border: none;
+                    background-color: rgba(175, 175, 175, 0.177);
+                }
+            }
+        }
+        .helpSectionTabContainer {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            article {
+                width: 60%;
+                .helpPercentageContainer {
+                    section {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                    }
+                }
+                .buttonActionContainer {
+                    justify-content: flex-start;
+                    button {
+                        width: 140px;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 40%;
+            max-height: 350px;
+        }
+    }
+}

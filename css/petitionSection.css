@@ -1,0 +1,47 @@
+.petitionSection {
+    background-color: var(--white-gray-color);
+    padding-bottom: 70px;
+    padding-top: 0;
+    section {
+        margin-bottom: 60px;
+        h2 {
+            line-height: 40px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+        button {
+            width: 100%;
+        }
+    }
+    img {
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:768px) {
+    .petitionSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 60px;
+
+        section {
+            margin-bottom: 0;
+            width: 50%;
+            h2 {
+                margin-bottom: 35px;
+            }
+            p {
+                margin-bottom: 70px;
+            }
+         
+        }
+        img {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.donateSection {
+    background-color: var(--secondary-color);
+}
+.donateSectionContainer {
+    article {
+        text-align: center;
+        h2.titleDonate {
+            text-wrap: balance;
+            font-size: clamp(2rem, 4vw, 2.6rem);
+        }
+        p {
+            margin-top: 10px;
+        }
+        .prizeButtonsContainer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            button {
+                color: white;
+                background-color: black;
+                padding: 10px 20px;
+                border: none;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .donateSectionContainer article .prizeButtonsContainer {
+        gap: 30px;
+        margin-top: 50px;
+        button {
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 20px 30px;
+        }
+    }
+}

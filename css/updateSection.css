@@ -1,0 +1,51 @@
+.updateSection {
+    background-color: var(--primary-color);
+}
+.updateSectionContainer {
+    section {
+        h2 {
+            font-size: clamp(1.3rem, 4vw, 2.3rem);
+        }
+        p {
+            margin: 10px 0 35px 0;
+        }
+    }
+    form {
+        .inputContainer {
+            display: flex;
+            gap: 10px;
+            input[type="text"] {
+                flex: 4;
+                padding-left: 10px;
+            }
+
+            input[type="submit"] {
+                flex: 2;
+            }
+        }
+        label {
+            margin-top: 15px;
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            font-family: "Karla", sans-serif;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .updateSectionContainer form input[type="text"]::placeholder {
+        font-family: "Karla", sans-serif;
+        font-size: 1rem;
+    }
+    .updateSectionContainer form label {
+        padding-left: 3px;
+        input[type="checkbox"] {
+            transform: scale(1.6);
+        }
+        font-size: 1.1rem;
+    }
+}

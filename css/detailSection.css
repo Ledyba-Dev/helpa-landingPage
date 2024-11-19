@@ -1,0 +1,36 @@
+.detailSection {
+    background-color: var(--secondary-color);
+}
+.detailSectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    .detailItem {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        p {
+            font-weight: 500;
+            font-family: "Karla", sans-serif;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .detailSectionContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 55px;
+        .detailItem {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            p {
+                font-weight: 500;
+                font-family: "Karla", sans-serif;
+            }
+        }
+    }
+}

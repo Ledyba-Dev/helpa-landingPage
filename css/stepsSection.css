@@ -1,0 +1,120 @@
+.stepsSection {
+    background-color: var(--primary-color);
+}
+.stepsSectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .stepsInformation {
+        h2 {
+            line-height: 40px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+        button {
+            width: 100%;
+        }
+    }
+    .steps {
+        padding-left: 25px;
+        margin-right: auto;
+        .stepsOl {
+            border-inline-start: 3px dashed black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            li {
+                display: flex;
+                align-items: center;
+                height: 48px;
+                padding-left: 40px;
+                .stepCircle {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    border: 1px solid var(--black-color);
+                    position: absolute;
+                    left: -29px;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+            }
+
+            li:nth-child(1) .stepCircle {
+                top: 0;
+                background-color: var(--white-gray-color);
+            }
+            li:nth-child(2) .stepCircle {
+                background-color: var(--gray-color);
+            }
+            li:nth-child(3) .stepCircle {
+                background-color: var(--variant-secondary-color);
+            }
+            li:nth-child(4) .stepCircle {
+                bottom: 0;
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .stepsSectionContainer {
+        flex-direction: row;
+        .stepsInformation {
+            width: 50%;
+            h2 {
+                line-height: 55px;
+            }
+            p {
+                margin-bottom: 50px;
+            }
+            button {
+                width: 150px;
+            }
+        }
+        .steps {
+            padding-left: 25px;
+            margin-right: auto;
+            .stepsOl {
+                border-inline-start: 3px dashed black;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 90px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: 48px;
+                    padding-left: 40px;
+                    .stepCircle {
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: bold;
+                        border: 1px solid var(--black-color);
+                        position: absolute;
+                        left: -35px;
+                    }
+    
+                    p {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

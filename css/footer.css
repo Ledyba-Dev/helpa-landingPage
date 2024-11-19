@@ -1,0 +1,47 @@
+.footer {
+    background-color: var(--secondary-color);
+}
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: var(--black-color);
+        h2 {
+            font-size: clamp(1.7rem, 2vw, 4rem);
+            font-weight: 500;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        a {
+            font-family: "Karla", sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    .information {
+        font-weight: 700;
+        font-family: "Lora", serif;
+        p {
+            font-size: 1.2rem;
+
+        }
+
+        .address {
+            margin-top: 40px;
+        }
+    }
+
+    .copyText {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.568);
+    }
+}

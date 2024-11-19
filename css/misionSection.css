@@ -1,0 +1,84 @@
+
+.misionSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .misionTextContainer .misionSectionText {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        small {
+            font-size: 12px;
+        }
+
+        h2 {
+            line-height: 43px;
+            font-family: "Karla", sans-serif;
+        }
+
+        p {
+            font-family: "Karla", sans-serif;
+        }
+    }
+    .misionTextContainer .misionCallToAction {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding-top: 50px;
+        section {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 17px;
+            h3 {
+                font-size: clamp(2rem, 2.45vw, 2.7rem);
+                font-weight: 500;
+                border-left: 2px dashed;
+                padding-left: 20px;
+            }
+
+            p {
+                line-height: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+    .misionPictures {
+        flex-direction: column;
+
+        img {
+            max-width: 280px;
+            width: 100%;
+        }
+
+        .imgMision1 {
+            display: block;
+        }
+        .imgMision2 {
+            display: block;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .misionSection {
+        flex-direction: row;
+
+        .misionTextContainer {
+            width: 65%;
+        }
+        .misionPictures {
+            width: 30%;
+            position: relative;
+
+            .imgMision2 {
+                position: absolute;
+                bottom: -50px;
+
+                left: 30px;
+            }
+        }
+    }
+}
